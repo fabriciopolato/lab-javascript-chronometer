@@ -21,14 +21,14 @@ class Chronometer {
   }
 
   stopClick() {
-    clearInterval(this.intervalId)
+    clearInterval(this.intervalId);
   }
 
   resetClick() {
-    // ... your code goes here
+    this.currentTime = 0;
   }
 
   splitClick() {
-    // ... your code goes here
+    return this.twoDigitsNumber(this.getMinutes()) + ':' + this.twoDigitsNumber(this.getSeconds());
   }
 }
